@@ -138,7 +138,7 @@ Por padrão, as provedoras de nuvem tendem a ter contratos e uma série de padr�
 ***
 
  Recuperação e Continuidade**
-
+git
 *   Ativação de planos de contingência para restaurar serviços rapidamente.
 *   Uso de redundância geográfica para minimizar impacto.
 *   Em alguns casos, migração temporária para outra região.
