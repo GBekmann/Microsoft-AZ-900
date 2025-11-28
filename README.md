@@ -17,29 +17,51 @@ Como resposta às dificuldades relacionadas à escalabilidade desses servidores,
 ## Cloud Computing
 
 Consiste em servidores e recursos de hardware disponibilizados de forma virtual e acessados pela internet. Esses servidores ficam localizados em grandes Data Centers especializados e distribuídos mundialmente.
+> Esses Data Centers disponibilizam não só uma equipe especializada na manutenção física dos servidores, como também dispõem de uma infraestrutura totalmente preparada para garantir o melhor funcionamento dos sistemas, assegurando sempre sua plena operação.
 
 ## Tipos de Seviços de computação em Nuvem
 
 Dentro da nuvem, temos três modelos de serviços disponibilizados com base na computação em nuvem, estes são:
 
-# **IaaS (Infrastructure as a Service)**
-# **IaaS (Infrastructure as a Service)**
-# **IaaS (Infrastructure as a Service)**
+>### **IaaS (Infrastructure as a Service)**
+>
+>Quando nos referimos a Infraestrutura como serviço, estamos nos referindo a infra-estrutura de hardware. Ou seja, Estamos utilizando recursos referentes a processamento e armazenamento.
+>
+>Podemos citar exemplos como criação de VMs na Azure ou armazenamento utilizando o OneDrive
+>*  Microsoft Azure Virtual Machines 
+>*  Amazon EC2 (Elastic Compute Cloud) 
+>*  Google Compute Engine – Infraestrutura escalável para rodar VMs no Google Cloud.
+>*  IBM Cloud Virtual Servers – Máquinas virtuais com recursos configuráveis.
+>* Oracle Cloud Infrastructure (OCI) – Infraestrutura para workloads corporativos.
+***
 
-Quando nos referimos a Infraestrutura como serviço, estamos nos referindo a infra-estrutura de hardware. Ou seja, Estamos utilizando recursos referentes a processamento e armazenamento.
-
-Podemos citar exemplos como criação de VMs na Azure ou armazenamento utilizando o OneDrive
+>### **PaaS (Platform as a Service)**
+>
+>   Plataformas como serviços normalmente são plataformas das quais são distribuídas através de >licenças/assinaturas. Estas mesmas costumam já serem construídas com um conjunto repleto de >ferramentas. Bastando ao usuário, apenas utiliza-la e ajustar o ambiente conforme suas preferências.
+>*  Microsoft Azure App Service
+>*  Google App Engine 
+>*  Heroku
+>*  AWS Elastic Beanstalk
+>*  IBM Cloud Foundry 
+>*  Oracle Cloud Application Container
+>
+>   Para clara compreensão, Quando estamos falando de uma Plataforma, trata-se de uma Plataforma completa para desenvolvimento e execução. Fazendo-se desnecessária a necessidade de gerenciar servidores ou sistemas operacionais. Nos permitindo apenas focar no trabalho a ser feito.
 
 ***
 
-**SaaS (Software as a Service)**
+>### **SaaS (Software as a Service)**
+>
+>Quando nos referimos a SaaS, estamos nos referindo a um modelo de aquisição/utilização de um software onde não esteja relacionado a compra das licenças, sendo assim, utilizamos o software e pagamos por sua utilização.
+>
+>Como exemplos práticos, podemos citar:
+>*  Microsoft 365 (Word, Excel, Outlook online) – Pacote de produtividade acessado via nuvem.
+>*  Google Workspace (Gmail, Google Docs, Google Drive)
+>*  Dropbox – Armazenamento e compartilhamento de arquivos.
+>*  Slack – Comunicação corporativa via chat.
+>*  Netflix – Streaming de vídeos (também é considerado SaaS, pois é um serviço entregue via software na nuvem).
 
-Quando nos referimos a SaaS
-
-**PaaS (Platform as a Service)**
 
 
-> Esses Data Centers disponibilizam não só uma equipe especializada na manutenção física dos servidores, como também dispõem de uma infraestrutura totalmente preparada para garantir o melhor funcionamento dos sistemas, assegurando sempre sua plena operação.
 
 ***
 
@@ -64,8 +86,8 @@ Atualmente, temos três modelos de nuvem comumente utilizados pelas empresas:
 >*   É acessada via conexão de rede segura (geralmente pela internet).
 >*   Possui uma vasta quantidade de ferramentas próprias concedidas pelo provedor (firewalls, MDMs, sistemas de análise de dados, acesso a aplicações do ecossistema etc.).
 >*   Custo sob demanda.
-
- Toda a parte de manutenção fica a cargo do provedor do serviço de nuvem.
+>
+> Toda a parte de manutenção fica a cargo da provedora do serviço de nuvem (o Data Center para a parte física e a provedora da plataforma para manutenções, atualizações de software, correções de segurança e melhorias de desempenho).
 
 >### Nuvem Híbrida
 >
@@ -160,7 +182,7 @@ Por padrão, as provedoras de nuvem tendem a ter contratos e uma série de padr�
 
 ## 2. Escalabilidade
 
-Capacidade de aumentar ou reduzir recursos conforme a demanda, garantindo desempenho e eficiência.
+Capacidade de aumentar ou reduzir recursos conforme a demanda, garantindo desempenho e eficiência. A escalabilidade possibilitada pela Cloud Computing, de fato é o principal fator diferencial.
 
 ## 3. Elasticidade
 A elasticidade refere-se a quando há um salto repentino acentuado na demanda, os recursos implantados podem ser expandidos(automaticamente ou manualmente).
