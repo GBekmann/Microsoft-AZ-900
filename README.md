@@ -155,6 +155,18 @@ Por padrão, as provedoras de nuvem tendem a ter contratos e uma série de padr�
 >*   Os contratos incluem um **SLA**, que define a disponibilidade garantida (ex.: 99,9%).
 >*   Se o provedor não cumprir, a provedora oferece créditos financeiros ou descontos (apenas em serviços voltados a nuvem).
 >*   Exemplo: Em caso do servidor ficar indisponível por um tempo que passe do estimado no contrato de SLA, a provedora concede uma bonificação generosa de crédito como compensação.
+>
+>
+>### **Tabela de SLA e Tempo de Inatividade**
+>
+>| **SLA (%)** | **Inatividade por Semana** | **Inatividade por Mês** | **Inatividade por Ano** |
+>| ----------- | -------------------------- | ----------------------- | ----------------------- |
+>| **99%**     | \~1h 40min                 | \~7h 18min              | \~3d 15h 36min          |
+>| **99,9%**   | \~10min                    | \~43min                 | \~8h 45min              |
+>| **99,95%**  | \~5min                     | \~21min                 | \~4h 22min              |
+>| **99,99%**  | \~1min                     | \~4min                  | \~52min                 |
+>| **99,999%** | \~6s                       | \~26s                   | \~5min 15s              |
+
 
 >### Comunicação e Transparência
 >
