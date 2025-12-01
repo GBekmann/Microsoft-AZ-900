@@ -266,11 +266,27 @@ Dentro da nuvem, temos três modelos de serviços disponibilizados com base na c
 >Quando nos referimos a SaaS, estamos nos referindo a um modelo de aquisição/utilização de um software onde não esteja relacionado a compra das licenças, sendo assim, utilizamos o software e pagamos por sua utilização.
 >
 >Como exemplos práticos, podemos citar:
->*  Microsoft 365 (Word, Excel, Outlook online) – Pacote de produtividade acessado via nuvem.
+>*  Microsoft 365 (Word, Excel, Outlook online)
 >*  Google Workspace (Gmail, Google Docs, Google Drive)
->*  Dropbox – Armazenamento e compartilhamento de arquivos.
->*  Slack – Comunicação corporativa via chat.
->*  Netflix – Streaming de vídeos (também é considerado SaaS, pois é um serviço entregue via software na nuvem).
+>*  Dropbox 
+>*  Slack 
+>*  Netflix 
+>
+> Resumindo, São os Aplicativos hospedados...
 
 ***
+
+## Modelo de responsabilidade compartilhada
+
+
+O modelo de responsabilidade compartilhada na nuvem refere-se a quem é responsável por quê entre o **provedor de nuvem** e o **cliente**,
+dependendo do tipo de serviço em questão (IaaS, Saas, PaaS).
+
+>* A princípio, toda a questão de **infraestrutura física, segurança do datacentr, hardware, sistema operacional, plataforma e demais manutenções físicas** ficam a critério do provedor de nuvem.
+>
+>* O cliente é responsável pela configuração, dados, identidade, acesso e aplicações.
+>
+Segue abaixo uma tabela ilustrativa mostrando melhor a questão de responsabilidade quanto aos serviços de nuvem.
+
+![Tabela de responsabilidade copmartilhada](image.png)
 
