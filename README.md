@@ -175,18 +175,18 @@ A nuvem oferece diversas ferramentas relacionadas a segurança, estas vão desde
 
 Podemos citar alguns exemplos como:
 
->### Entra ID (Antigo Active Directory)
->
+* **Entra ID (Antigo Active Directory)**
+
 >Sistema de autenticação/autorização de usuários do qual ajuda a proteger o acesso a aplicativos e recursos da Azure.
 >
 >A implementação não fica a cargo da Microsoft, cabendo a nós gestores/administradores, realizar a implementação.
 
->### Microsoft Defender
->
+* **Microsoft Defender**
+
 >O Defender implementado na Azure oferece diversas ferramentas relacionadas à detecção de ameaças, integração com DevOps e gerenciamento de posturas de segurança.
 
->### Microsoft Intune
->
+* **Microsoft Intune**
+
 >O Intune é a ferramenta responsável pelo gerenciamento de ponto de extremidade baseado em nuvem.
 >
 >Basicamente, é por ele que podemos implementar políticas de segurança nas máquinas. Privando os usuários de realizar ajustes inesperados ou até de instalar softwares/arquivos suspeitos.
@@ -313,3 +313,28 @@ Com base na tabela acima, podemos resumir que
 # Módulo 2 - Arquitetura e serviços do Azure
 
 ## Regiões de disponibilidade
+
+A Azure está em constante expansão, como podemos ver no mapa abaixo. A mesma já está disponível na maioria dos continentes.
+
+![alt text](assets/DisponibilidadeAzure.png)
+
+>Podemos notar nas legendas da imagem, que alguns pontos são zonas e outros pontos são regiões. A diferença entre eles consiste em:
+
+### **Região**
+
+A região consiste em um conjunto de data centers localizados em uma área geográfica específica.
+* Cada região do Azure é composta por múltiplas zonas de disponibilidade (quando disponíveis).
+Exemplo:
+    East US, Brazil South, West Europe
+> Vale a analogia de considerar a região como uma cidade que abriga vários prédios (data centers)
+
+###  **Zona**
+
+Quando estamos nos referindo a uma zona, estamos nos referindo a um data center físico independente dentro de uma região.
+
+* Cada zona tem sua própria energia, refrigeração e rede, garantindo alta disponibilidade.
+* Geralmente, uma região possuí 3 zonas (1 Região = 3 Data Centers)
+* Se você implantar recursos em **zonas diferentes**, aumenta a tolerância a falhas.
+> Caso aplicarmos a mesma analogica citada anteriormente, Podemos considerar que neste caso, estamos nos referindo ao prédio individualmente.
+
+Por padrão,
