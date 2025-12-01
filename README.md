@@ -4,6 +4,9 @@
 
 Resumo dos temas já abordados no curso **Formação Microsoft AZ-900 Certification**, cedido pela Digital Innovation One.
 
+# Módulo 1 - O que é Cloud Computing?
+
+
 ## A origem da computação em nuvem
 
 Antigamente, empresas que precisavam trabalhar com grandes quantidades de documentos e dados tinham que realizar investimentos significativos para criar um servidor próprio para armazenar essa grande quantidade de informações.
@@ -23,39 +26,40 @@ Consiste em servidores e recursos de hardware disponibilizados de forma virtual 
 ## Modelos de nuvem
 Atualmente, temos três modelos de nuvem comumente utilizados pelas empresas:
 
->### Nuvem Privada (On-Premise)
->
->Este modelo refere-se a servidores físicos instalados dentro da própria empresa. Suas principais características são:
->
+### Nuvem Privada (On-Premise)
+Este modelo refere-se a servidores físicos instalados dentro da própria empresa. Suas principais características são:
+
 >*   As organizações criam um ambiente de nuvem em seu próprio datacenter.
 >*   As organizações são responsáveis por operar os serviços que fornecem.
 >*   Não fornece acesso a usuários fora da organização.
 >*   Maior custo inicial, porém, após implementada, basta realizar manutenções quando necessário.
 
->### Nuvem Pública
->
->A **nuvem pública** consiste em uma plataforma gerenciada online, na qual é possível não apenas armazenar grandes quantidades de dados, mas também hospedar serviços e implementar políticas de segurança nos dispositivos.
+### Nuvem Pública
+
+A **nuvem pública** consiste em uma plataforma gerenciada online, na qual é possível não apenas armazenar grandes quantidades de dados, mas também hospedar serviços e implementar políticas de segurança nos dispositivos.
 >
 >*   Pertence a provedores de serviços de nuvem ou hosting.
 >*   Fornece recursos e serviços a várias organizações e usuários.
 >*   É acessada via conexão de rede segura (geralmente pela internet).
 >*   Possui uma vasta quantidade de ferramentas próprias concedidas pelo provedor (firewalls, MDMs, sistemas de análise de dados, acesso a aplicações do ecossistema etc.).
 >*   Custo sob demanda.
->
-> Toda a parte de manutenção fica a cargo da provedora do serviço de nuvem (o Data Center para a parte física e a provedora da plataforma para manutenções, atualizações de software, correções de segurança e melhorias de desempenho).
 
->### Nuvem Híbrida
->
->A **nuvem híbrida** consiste na adoção dos dois tipos de nuvem citados acima: privada e pública. Resumidamente, junta o melhor dos dois mundos.
+ Toda a parte de manutenção fica a cargo da provedora do serviço de nuvem (o Data Center para a parte física e a provedora da plataforma para manutenções, atualizações de software, correções de segurança e melhorias de desempenho).
+
+### Nuvem Híbrida
+
+A **nuvem híbrida** consiste na adoção dos dois tipos de nuvem citados acima: privada e pública. Resumidamente, junta o melhor dos dois mundos.
 >
 >*   Maior escalabilidade sob demanda.
 >*   Melhor gestão de recursos.
 >*   Interoperabilidade.
 >*   Custo variável.
 
->### Multi-Cloud
->
->O conceito de **multi-cloud** tem sido cada vez mais adotado por empresas de grande porte, que utilizam mais de um tipo de nuvem pública para hospedar seus dados. Apesar da complexidade na implementação, oferece maior redundância.
+
+
+### Multi-Cloud
+
+O conceito de **multi-cloud** tem sido cada vez mais adotado por empresas de grande porte, que utilizam mais de um tipo de nuvem pública para hospedar seus dados. Apesar da complexidade na implementação, oferece maior redundância.
 >
 >*   Maior complexidade.
 >*   Menor downtime (se um serviço falhar, outro assume).
@@ -67,11 +71,10 @@ Atualmente, temos três modelos de nuvem comumente utilizados pelas empresas:
 
 Dentro das possibilidades de implementação de nuvem, é importante entender os tipos de despesas:
 
->### CapEx (Capital Expenditure)
->
->O termo **CapEx** significa **Despesas de Capital** e refere-se aos gastos de uma empresa para aquisição, melhoria ou manutenção de um ativo fixo por longo prazo.
->
->Principais características:
+### CapEx (Capital Expenditure)
+ termo **CapEx** significa **Despesas de Capital** e refere-se aos gastos e uma empresa para aquisição, melhoria ou manutenção de um ativo fixo por longo prazo.
+
+**Principais características:**
 >
 >*   Custos iniciais elevados.
 >*   Exige tempo para implementação e para o investimento tornar-se operacional.
@@ -79,20 +82,20 @@ Dentro das possibilidades de implementação de nuvem, é importante entender os
 >*   Custos operacionais tendem a diminuir com o tempo.
 >*   Ideal para aquisição, melhorias ou expansões.
 >
->No contexto de computação em nuvem, o **CapEx** representa o investimento necessário para construir a infraestrutura física de um servidor privado. É um custo elevado no início, mas tende a reduzir os gastos operacionais ao longo do tempo.
+No contexto de computação em nuvem, o **CapEx** representa o investimento necessário para construir a infraestrutura física de um servidor privado. É um custo elevado no início, mas tende a reduzir os gastos operacionais ao longo do tempo.
 
->### OpEx (Operational Expenditure)
->
->O termo **OpEx** refere-se às **despesas operacionais**, como assinaturas de licenças e outros custos recorrentes (salários, seguros, contas etc.).
->
->Principais características:
+### OpEx (Operational Expenditure)
+
+O termo **OpEx** refere-se às **despesas operacionais**, como assinaturas de licenças e outros custos recorrentes (salários, seguros, contas etc.).
+
+**Principais características:**
 >
 >*   Não é um ativo, mas sim uma despesa.
 >*   Custos recorrentes e, em alguns casos, variáveis.
 >*   Geralmente exige menos tempo para tornar-se operacional.
 >
->No contexto de computação em nuvem, representa os custos da utilização das plataformas, que costumam cobrar mensalmente conforme os recursos utilizados.
->
+No contexto de computação em nuvem, **OpEx** representa os custos da utilização das plataformas, que costumam cobrar mensalmente conforme os recursos utilizados.
+
 ***
 
 # Benefícios da Nuvem
@@ -105,43 +108,43 @@ Os serviços em nuvem possuem estrutura voltada para manter os sistemas sempre o
 
 Por padrão, as provedoras de nuvem tendem a ter contratos e uma série de padrões:
 
->###  SLA (Service Level Agreement) e Créditos
+###  SLA (Service Level Agreement) e Créditos
 >
 >*   Os contratos incluem um **SLA**, que define a disponibilidade garantida (ex.: 99,9%).
 >*   Se o provedor não cumprir, a provedora oferece créditos financeiros ou descontos (apenas em serviços voltados a nuvem).
 >*   Exemplo: Em caso do servidor ficar indisponível por um tempo que passe do estimado no contrato de SLA, a provedora concede uma bonificação generosa de crédito como compensação.
 >
 >
->### **Tabela de SLA e Tempo de Inatividade**
->
->| **SLA (%)** | **Inatividade por Semana** | **Inatividade por Mês** | **Inatividade por Ano** |
->| ----------- | -------------------------- | ----------------------- | ----------------------- |
->| **99%**     | \~1h 40min                 | \~7h 18min              | \~3d 15h 36min          |
->| **99,9%**   | \~10min                    | \~43min                 | \~8h 45min              |
->| **99,95%**  | \~5min                     | \~21min                 | \~4h 22min              |
->| **99,99%**  | \~1min                     | \~4min                  | \~52min                 |
->| **99,999%** | \~6s                       | \~26s                   | \~5min 15s              |
+### **Tabela de SLA e Tempo de Inatividade**
+
+| **SLA (%)** | **Inatividade por Semana** | **Inatividade por Mês** | **Inatividade por Ano** |
+| ----------- | -------------------------- | ----------------------- | ----------------------- |
+| **99%**     | \~1h 40min                 | \~7h 18min              | \~3d 15h 36min          |
+| **99,9%**   | \~10min                    | \~43min                 | \~8h 45min              |
+| **99,95%**  | \~5min                     | \~21min                 | \~4h 22min              |
+| **99,99%**  | \~1min                     | \~4min                  | \~52min                 |
+| **99,999%** | \~6s                       | \~26s                   | \~5min 15s              |
 
 
->### Comunicação e Transparência
->
+### Comunicação e Transparência
+
 >*   O provedor envia alertas e relatórios sobre incidentes.
 >*   Publica atualizações em **status pages** (ex.: status.aws.amazon.com).
 >*   Em casos críticos, pode haver contato direto com clientes corporativos.
 
->### Recuperação e Continuidade
->
+### Recuperação e Continuidade
+
 >*   Ativação de planos de contingência para restaurar serviços rapidamente.
 >*   Uso de redundância geográfica para minimizar impacto.
 >*   Em alguns casos, migração temporária para outra região.
 
->### Suporte Técnico Prioritário
->
+### Suporte Técnico Prioritário
+
 >*   Clientes com planos premium recebem suporte dedicado durante incidentes.
 >*   Pode incluir engenheiros especializados para ajudar na mitigação.
 
->### Relatório Pós-Incidente
->
+### Relatório Pós-Incidente
+
 >*   Após normalização, o provedor envia um relatório explicando:
 >       -  Causa raiz do problema
 >       -  Medidas corretivas para evitar recorrência
@@ -206,19 +209,19 @@ Um dos principais benefícios da computação em nuvem são as opções de capac
 
 Estes são:
 
->### Gerenciamento da nuvem
->
->O gerenciamento da nuvem diz respeito a gerenciar seus recursos de nuvem. Na nuvem, você pode:
+### Gerenciamento da nuvem
+
+O gerenciamento da nuvem diz respeito a gerenciar seus recursos de nuvem. Na nuvem, você pode:
 >
 >- Escalar automaticamente a implantação de recursos com base na necessidade.
 >- Implantar recursos com base em um modelo pré-configurado, removendo a necessidade de configuração manual.
 >- Monitorar a integridade dos recursos e substituir automaticamente os recursos com falha.
 >- Receber alertas automáticos com base em métricas configuradas, de modo a ficar ciente do desempenho em tempo real.
 
->### Gerenciamento na nuvem
->
->Diz respeito à maneira de gerenciar seu ambiente de nuvem e seus recursos. Podemos gerencia-los por meio de:
->
+### Gerenciamento na nuvem
+
+Diz respeito à maneira de gerenciar seu ambiente de nuvem e seus recursos. Podemos gerencia-los por meio de:
+
 >- Por meio de um portal da Web
 >- Usando interface de linha de comando
 >- Usando APIs
@@ -230,25 +233,25 @@ Estes são:
 
 Dentro da nuvem, temos três modelos de serviços disponibilizados com base na computação em nuvem, estes são:
 
->### **IaaS (Infrastructure as a Service)**
->
->Quando nos referimos a Infraestrutura como serviço, estamos nos referindo a infra-estrutura de hardware. Ou seja, Estamos utilizando recursos referentes a processamento, armazenamento, firewalls e demais recursos referentes a segurança de rede. 
->
->Podemos citar exemplos como criação de VMs na Azure ou armazenamento utilizando o OneDrive
+### **IaaS (Infrastructure as a Service)**
+
+Quando nos referimos a Infraestrutura como serviço, estamos nos referindo a infra-estrutura de hardware. Ou seja, Estamos utilizando recursos referentes a processamento, armazenamento, firewalls e demais recursos referentes a segurança de rede. 
+
+Podemos citar exemplos como criação de VMs na Azure ou armazenamento utilizando o OneDrive
 >*  Microsoft Azure Virtual Machines 
 >*  Amazon EC2 (Elastic Compute Cloud) 
 >*  Google Compute Engine – Infraestrutura escalável para rodar VMs no Google Cloud.
 >*  IBM Cloud Virtual Servers – Máquinas virtuais com recursos configuráveis.
 >* Oracle Cloud Infrastructure (OCI) – Infraestrutura para workloads corporativos.
 >
-> Por consequência, seus ajustes ficam totalmente a cargo do usuário/contratante
+ Por consequência, seus ajustes ficam totalmente a cargo do usuário/contratante
 >
 
 ***
 
->### **PaaS (Platform as a Service)**
->
->Plataformas como serviços normalmente são plataformas das quais são distribuídas através de licenças/assinaturas. Estas mesmas costumam já serem construídas com um conjunto repleto de ferramentas. Bastando ao usuário, apenas utiliza-la e ajustar o ambiente conforme suas preferências.
+### **PaaS (Platform as a Service)**
+
+Plataformas como serviços normalmente são plataformas das quais são distribuídas através de licenças/assinaturas. Estas mesmas costumam já serem construídas com um conjunto repleto de ferramentas. Bastando ao usuário, apenas utiliza-la e ajustar o ambiente conforme suas preferências.
 
 >*  Microsoft Azure App Service
 >*  Google App Engine 
@@ -256,23 +259,23 @@ Dentro da nuvem, temos três modelos de serviços disponibilizados com base na c
 >*  AWS Elastic Beanstalk
 >*  IBM Cloud Foundry 
 >*  Oracle Cloud Application Container
->
->Para clara compreensão, Quando estamos falando de uma Plataforma, trata-se de uma Plataforma completa para desenvolvimento e execução. Fazendo-se desnecessária a necessidade de gerenciar servidores ou sistemas operacionais. Nos permitindo apenas focar no trabalho a ser feito. Como por exemplo, desenvolvimento, gerenciamento de database, análise de negócios e etc...
+
+Para clara compreensão, Quando estamos falando de uma Plataforma, trata-se de uma Plataforma completa para desenvolvimento e execução. Fazendo-se desnecessária a necessidade de gerenciar servidores ou sistemas operacionais. Nos permitindo apenas focar no trabalho a ser feito. Como por exemplo, desenvolvimento, gerenciamento de database, análise de negócios e etc...
 
 ***
 
->### **SaaS (Software as a Service)**
->
->Quando nos referimos a SaaS, estamos nos referindo a um modelo de aquisição/utilização de um software onde não esteja relacionado a compra das licenças, sendo assim, utilizamos o software e pagamos por sua utilização.
->
->Como exemplos práticos, podemos citar:
+### **SaaS (Software as a Service)**
+
+Quando nos referimos a SaaS, estamos nos referindo a um modelo de aquisição/utilização de um software onde não esteja relacionado a compra das licenças, sendo assim, utilizamos o software e pagamos por sua utilização.
+
+Como exemplos práticos, podemos citar:
 >*  Microsoft 365 (Word, Excel, Outlook online)
 >*  Google Workspace (Gmail, Google Docs, Google Drive)
 >*  Dropbox 
 >*  Slack 
 >*  Netflix 
->
-> Resumindo, São os Aplicativos hospedados...
+
+ Resumindo, São os Aplicativos hospedados...
 
 ***
 
@@ -285,8 +288,28 @@ dependendo do tipo de serviço em questão (IaaS, Saas, PaaS).
 >* A princípio, toda a questão de **infraestrutura física, segurança do datacentr, hardware, sistema operacional, plataforma e demais manutenções físicas** ficam a critério do provedor de nuvem.
 >
 >* O cliente é responsável pela configuração, dados, identidade, acesso e aplicações.
->
+
 Segue abaixo uma tabela ilustrativa mostrando melhor a questão de responsabilidade quanto aos serviços de nuvem.
 
 ![Tabela de responsabilidade copmartilhada](image.png)
+Com base na tabela acima, podemos resumir que
 
+### **IaaS**
+>* Serviço de nuvem mais flexível
+>* Cliente configura e gerencia o hardware para seu aplicativo.
+
+### **PaaS**
+
+>* Focado no desenvolvimento de aplicativos.
+>* O gerenciamento de plataforma é realizado pelo provedor de nuvem.
+
+### **SaaS**
+
+>* Modelo de preço de pagamento conforme o uso. (Vale a alusão a licenciamentos)
+>* Os usuários pagam pelo software que utilizam em um modelo de assinatura
+
+*** 
+
+# Módulo 2 - Arquitetura e serviços do Azure
+
+## Regiões de disponibilidade
