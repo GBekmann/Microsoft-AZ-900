@@ -344,6 +344,8 @@ Exemplo:
 
 > Quando nos referimos a **residência dos dados**. Estamos nos referindo a localidade geográfica dos dados, ou seja, onde estes dados, estão físicamente localizados. Sendo assim, estamos nos referindo a região onde eles estão replicados.
 
+![Ilustração exemplificando uma região da Azure](assets/RegiaoAzure.png)
+
 ## Pares de regiões
 Um dos principais meios de prevenção para falhas catastróficas, é a utilização dos pares de regiões. Estes pares de regiões possuem como características principais:
 > * No mínimo 300 milhas de separação entre pares de regiões. 
@@ -405,4 +407,4 @@ A Azure dispõe de diversos recursos em nuvem, estes podendo ser recursos de red
 
 ### Grupos de recursos
 
-Nos grupos de recursos, podemos adicionar os recursos dos quais estamos utilizando, definir políticas das quais os usuários deverão seguir. Caso queiramos desfazer alterações ou até mesmo excluir o grupo. Tudo com poucos passos e de forma unificada."
+Nos grupos de recursos, podemos adicionar os recursos dos quais estamos utilizando, definir políticas das quais os usuários deverão seguir. Caso queiramos desfazer alterações ou até mesmo excluir o grupo. Tudo com poucos passos e de forma unificada.
