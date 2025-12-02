@@ -350,12 +350,59 @@ Um dos principais meios de prevenção para falhas catastróficas, é a utiliza�
 > * Replicação automática para **alguns serviços**.
 > * Recuperação de região priorizada em caso de interrupção.
 > * As atualizações são distribuídas sequencialmente para minimizar o tempo de inatividade.
+> * Vale observar que os dados continuam na mesma geografia que seu par, por fins de jurisdição do imposto e aplicação da lei.
 > * Estas regiões tem pares pré-determinados, seguindo a tabela abaixo:
 
 ![Pares de regiões dos servidores Azure](assets/ParesRegiao.png)
 
 ## Disaster recovery
 
-Quando a nossa região
+Quando a região principal não estiver disponível, podemos recorrer ao uso do **Disaster Recovery**. Esse conceito consiste em manter réplicas dos recursos essenciais em outra região, garantindo maior resiliência e continuidade dos serviços em caso de desastres que possam tornar a região original indisponível.
+>A região utilizada como redundância para a região principal, é a sua região par. Seguindo a tabela de Pares de Regiões.
 
-Consiste em ter uma réplica de recursos essenciais em outra região, para que quando o ambiente esteja offline, seja possível mante-lo em funcionamento por meio de outra região.
+***
+
+## Zonas soberanas
+Zonas soberanas são ambientes de nuvem projetados para atender às normas e regulamentações locais do país ou região onde estão hospedadas. Elas foram desenvolvidas principalmente para cumprir requisitos rigorosos de soberania digital, garantindo que dados e serviços permaneçam sob controle jurisdicional adequado.
+Esses ambientes são indicados para organizações governamentais e entidades públicas que necessitam de maior proteção e conformidade.
+As zonas soberanas fazem parte da iniciativa Microsoft Sovereign Cloud, que combina a infraestrutura global do Azure com controles adicionais para assegurar conformidade com leis locais e oferecer proteção avançada aos dados.
+
+### Azure Governamental (Azure Government)
+
+Versão específica para uso governamental, apresentando diversas características específicas voltadas à segurança e conformidade dos dados. Como diferenciais a destacar, podemos citar:
+
+>* Ambiente isolado 
+> Infraestrutura separada da nuvem pública da Azure, garantindo uma maior segurança no ambiente como um todo.
+>
+>* Conformidade rigorosa
+> Atende normas como FedRAMP, DoD, CJIS, HIPAA, entre outras.
+>
+>* Residência dos dados
+> Todos os dados permanecem dentro da jurisdição dos EUA (para Azure Government) com acesso restrito a pessoal autorizado.
+>
+>* Serviços equivalentes ao Azure Público 
+> Oferece uma quantia de serviços equivalentes ao Azure público, porém, apresenta alguns serviços a mais voltados à segurança e compliance.
+
+### Azure China
+O Azure China é uma instância separada da nuvem Microsoft Azure, criada para operar dentro das regulamentações chinesas. Ele é o único serviço de nuvem estrangeiro presente na China, mas para isso, segue algumas condições específicas:
+
+>* Gerenciamento e operação
+Todo o ambiente é operado e regulamentado pela empresa 21Vianet, conforme exigido pelas leis locais.
+>
+>* Políticas próprias de residência de dados
+Os dados permanecem dentro da jurisdição chinesa, seguindo regras de soberania digital.
+>
+>* Ambiente isolado 
+É separado da nuvem pública global do Azure, garantindo conformidade com normas de segurança e privacidade da China.
+>
+>* Serviços equivalentes ao Azure global, mas adaptados para atender às exigências regulatórias locais.
+
+*** 
+
+## Recursos do Azure    
+
+A Azure dispõe de diversos recursos em nuvem, estes podendo ser recursos de rede, armazenamento em nuvem, computação em nuvem, IA, segurança, hospedagem de serviços, APIs e mais uma infinidade de possibilidades. São tantos recursos que para gerencia-los de forma individual. Surgiu uma nova forma de gerencia-los de forma unificada. Esta forma seriam os **Grupos de recursos**.
+
+### Grupos de recursos
+
+Nos grupos de recursos, podemos adicionar os recursos dos quais estamos utilizando, definir políticas das quais os usuários deverão seguir. Caso queiramos desfazer alterações ou até mesmo excluir o grupo. Tudo com poucos passos e de forma unificada."
