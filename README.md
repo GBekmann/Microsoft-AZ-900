@@ -175,17 +175,17 @@ A nuvem oferece diversas ferramentas relacionadas a segurança, estas vão desde
 
 Podemos citar alguns exemplos como:
 
-* **Entra ID (Antigo Active Directory)**
+### Entra ID (Antigo Active Directory)
 
 >Sistema de autenticação/autorização de usuários do qual ajuda a proteger o acesso a aplicativos e recursos da Azure.
 >
 >A implementação não fica a cargo da Microsoft, cabendo a nós gestores/administradores, realizar a implementação.
 
-* **Microsoft Defender**
+### Microsoft Defender
 
 >O Defender implementado na Azure oferece diversas ferramentas relacionadas à detecção de ameaças, integração com DevOps e gerenciamento de posturas de segurança.
 
-* **Microsoft Intune**
+### Microsoft Intune
 
 >O Intune é a ferramenta responsável pelo gerenciamento de ponto de extremidade baseado em nuvem.
 >
@@ -194,7 +194,8 @@ Podemos citar alguns exemplos como:
 >Podemos também realizar diagnósticos no dispositivo e até gerenciar em massa a implementação de atualizações, ajustes e diagnósticos…
 
 Temos também a possibilidade de realizar a implementação de Firewalls no ambiente de nuvem e também realizar a implementação de uma VPN.
-***
+
+
 ## 7. Governança
 
 A auditoria baseada em nuvem nos ajuda a determinar responsáveis para a administração do ambiente em nuvem. 
@@ -202,7 +203,7 @@ A auditoria baseada em nuvem nos ajuda a determinar responsáveis para a adminis
 Disponibilizando conjuntamente, ferramentas para diagnosticar se o ambiente como um todo está seguindo os padrões definidos pela auditoria e também, nos disponibilizando ferramentas e estratégias para mitigação de recursos fora de conformidade.
 
 A plataforma também, dispõe de inúmeras automações que possam nos auxiliar na padronização de gestão da nuvem.
-***
+
 ## 8. Gerenciabilidade
 
 Um dos principais benefícios da computação em nuvem são as opções de capacidade de gerenciamento. Há dois tipos de capacidade de gerenciamento para computação em nuvem. 
@@ -227,7 +228,6 @@ Diz respeito à maneira de gerenciar seu ambiente de nuvem e seus recursos. Pode
 >- Usando APIs
 >- Usando PoweShell
 
-***
 
 ## Tipos de Seviços de computação em Nuvem
 
@@ -320,21 +320,42 @@ A Azure está em constante expansão, como podemos ver no mapa abaixo. A mesma j
 
 >Podemos notar nas legendas da imagem, que alguns pontos são zonas e outros pontos são regiões. A diferença entre eles consiste em:
 
-### **Região**
-
-A região consiste em um conjunto de data centers localizados em uma área geográfica específica.
-* Cada região do Azure é composta por múltiplas zonas de disponibilidade (quando disponíveis).
-Exemplo:
-    East US, Brazil South, West Europe
-> Vale a analogia de considerar a região como uma cidade que abriga vários prédios (data centers)
-
-###  **Zona**
+###  **Zona/Zona de Disponibilidade**
 
 Quando estamos nos referindo a uma zona, estamos nos referindo a um data center físico independente dentro de uma região.
 
+* Geralmente, uma **região** possuí 3 zonas (1 Região = 3 Data Centers)
 * Cada zona tem sua própria energia, refrigeração e rede, garantindo alta disponibilidade.
-* Geralmente, uma região possuí 3 zonas (1 Região = 3 Data Centers)
 * Se você implantar recursos em **zonas diferentes**, aumenta a tolerância a falhas.
-> Caso aplicarmos a mesma analogica citada anteriormente, Podemos considerar que neste caso, estamos nos referindo ao prédio individualmente.
+> Caso aplicarmos a mesma analogia citada anteriormente, Podemos considerar que neste caso, estamos nos referindo ao prédio individualmente.
 
-Por padrão,
+
+### **Região**
+
+A **região consiste em um conjunto de data centers** localizados em uma área geográfica específica.
+* Cada região do Azure é composta por múltiplas zonas de disponibilidade (quando disponíveis).
+Exemplo:
+    East US, Brazil South, West Europe
+* Eles fornecem flexibilidade e escala para reduzir a latência do cliente.
+* As regiões preservam a **residência de dados** com uma oferta abrangente de conformidade.
+* A utilização da redundância é essencial para garantir a disponibilidade dos dados. Dessa forma, caso uma das zonas dentro da mesma região fique indisponível por qualquer motivo, ainda será possível acessar os dados por meio de outra zona dessa região.
+
+> Vale a analogia de considerar a região como uma cidade que abriga vários prédios (data centers)
+
+> Quando nos referimos a **residência dos dados**. Estamos nos referindo a localidade geográfica dos dados, ou seja, onde estes dados, estão físicamente localizados. Sendo assim, estamos nos referindo a região onde eles estão replicados.
+
+## Pares de regiões
+Um dos principais meios de prevenção para falhas catastróficas, é a utilização dos pares de regiões. Estes pares de regiões possuem como características principais:
+> * No mínimo 300 milhas de separação entre pares de regiões. 
+> * Replicação automática para **alguns serviços**.
+> * Recuperação de região priorizada em caso de interrupção.
+> * As atualizações são distribuídas sequencialmente para minimizar o tempo de inatividade.
+> * Estas regiões tem pares pré-determinados, seguindo a tabela abaixo:
+
+![Pares de regiões dos servidores Azure](assets/ParesRegiao.png)
+
+## Disaster recovery
+
+Quando a nossa região
+
+Consiste em ter uma réplica de recursos essenciais em outra região, para que quando o ambiente esteja offline, seja possível mante-lo em funcionamento por meio de outra região.
