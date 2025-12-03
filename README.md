@@ -401,10 +401,40 @@ Os dados permanecem dentro da jurisdição chinesa, seguindo regras de soberania
 
 *** 
 
-## Recursos do Azure    
+# Recursos do Azure    
 
 A Azure dispõe de diversos recursos em nuvem, estes podendo ser recursos de rede, armazenamento em nuvem, computação em nuvem, IA, segurança, hospedagem de serviços, APIs e mais uma infinidade de possibilidades. São tantos recursos que para gerencia-los de forma individual. Surgiu uma nova forma de gerencia-los de forma unificada. Esta forma seriam os **Grupos de recursos**.
 
-### Grupos de recursos
+## Grupos de recursos
 
-Nos grupos de recursos, podemos adicionar os recursos dos quais estamos utilizando, definir políticas das quais os usuários deverão seguir. Caso queiramos desfazer alterações ou até mesmo excluir o grupo. Tudo com poucos passos e de forma unificada.
+Grupos de recursos nada mais são como uma forma de unificar diversos recursos em um só ambiente.
+
+* O Grupo de recursos (Resource Group) nos permite unificar todo um ambiente em um só grupo de recursos. Ex: Web, BD, VM e Armazenamento
+
+* Podemos também criar um Grupo de recursos para cada função, por exemplo:
+>    * Um Grupo só para Web e Banco de dados
+>    * Um Grupo apenas para Máquinas virtuais
+>    * Um Grupo somente para recursos de armazenamento
+
+### Algumas observações sobre os Grupos de Recursos
+* Os recursos podem existir em apenas um grupo de recursos
+* Os recursos podem existir em diferentes regiões
+
+* Podemos migrar os recursos para outros grupos, caso preciso.
+
+* Não podemos renomear os Grupos de Recursos
+
+* Quando apagamos um grupo Grupo, apagamos todos os recursos e configurações que estavam préviamente configurados dentro dele.
+
+*** 
+
+## Contas e Assinaturas na Azure
+
+No contexto de Contas e Assinaturas do Azure, existe uma hierarquia bem definida.
+
+No topo, temos a conta principal, que atua como Administrador Global do ambiente. Logo abaixo, existem duas contas de cobrança, responsáveis pela gestão financeira.
+
+Essas contas de cobrança têm como função principal administrar as assinaturas dos demais usuários, além de realizar o controle detalhado dos custos da plataforma de nuvem. Como os serviços da Azure são sob demanda, a plataforma oferece diversos recursos para um gerenciamento financeiro preciso e eficiente.
+
+Seguindo essa lógica hierárquica, abaixo das contas de cobrança estão as contas dos usuários. Nelas, toda a parte de licenciamento, gerenciamento e ajustes já foi previamente configurada pelo nível superior, garantindo que os usuários possam utilizar os recursos de forma adequada.
+![Hierarquia das contas](assets/HierarquiaAzure.png)
