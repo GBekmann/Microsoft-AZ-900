@@ -437,4 +437,5 @@ No topo, temos a conta principal, que atua como Administrador Global do ambiente
 Essas contas de cobrança têm como função principal administrar as assinaturas dos demais usuários, além de realizar o controle detalhado dos custos da plataforma de nuvem. Como os serviços da Azure são sob demanda, a plataforma oferece diversos recursos para um gerenciamento financeiro preciso e eficiente.
 
 Seguindo essa lógica hierárquica, abaixo das contas de cobrança estão as contas dos usuários. Nelas, toda a parte de licenciamento, gerenciamento e ajustes já foi previamente configurada pelo nível superior, garantindo que os usuários possam utilizar os recursos de forma adequada.
+
 ![Hierarquia das contas](assets/HierarquiaAzure.png)
